@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Krishi Shomadhan</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', 'Noto Sans Bengali', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #f1f8e9 0%, #c8e6c9 100%);
+            min-height: 100vh;
+        }
+        .header {
+            background: linear-gradient(135deg, #1b5e20 0%, #43a047 100%);
+            color: white;
+            padding: 42px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+        }
+        .logo {
+            width: 82px;
+            height: 82px;
+            background: rgba(255,255,255,0.2);
+            border: 3px solid white;
+            border-radius: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 42px;
+            margin-bottom: 15px;
+            backdrop-filter: blur(10px);
+        }
+        .header h1 { font-size: 2.45em; margin-bottom: 8px; text-shadow: 0 2px 10px rgba(0,0,0,0.25); }
+        .header p { font-size: 1.18em; opacity: 0.95; }
+        .container { max-width: 920px; margin: -30px auto 0; padding: 20px; }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        .language-switch { text-align: center; margin-bottom: 30px; }
+        .language-switch button {
+            background: linear-gradient(135deg, #1b5e20 0%, #43a047 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            margin: 0 8px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: 700;
+        }
+        .language-switch button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(27,94,32,0.28); }
+        .language-switch button.active { background: linear-gradient(135deg, #ffd54f 0%, #ffe082 100%); color: #1b5e20; }
+        .content { display: none; }
+        .content.active { display: block; animation: fadeIn 0.45s; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+        h2 {
+            color: #1b5e20;
+            font-size: 1.78em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #43a047;
+        }
+        h3 { color: #2e7d32; font-size: 1.34em; margin-top: 24px; margin-bottom: 12px; }
+        p { margin-bottom: 15px; text-align: justify; }
+        ul, ol { margin-left: 30px; margin-bottom: 20px; }
+        li { margin-bottom: 10px; }
+        .info-box {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-left: 5px solid #43a047;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .warning-box {
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            border-left: 5px solid #ffa000;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .contact-box {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-left: 5px solid #2196f3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .contact-box strong { color: #1b5e20; display: block; margin-bottom: 6px; }
+        .last-updated {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: #666;
+        }
+        .footer { text-align: center; padding: 28px 20px; color: #666; margin-top: 20px; }
+        .footer a { color: #2e7d32; text-decoration: none; font-weight: 700; }
+        .footer a:hover { text-decoration: underline; }
+        .icon { margin-right: 8px; }
+        strong { color: #1b5e20; }
+        a { color: #1565c0; }
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.8em; }
+            .card { padding: 24px; }
+            .language-switch button { padding: 10px 18px; font-size: 14px; margin: 5px; }
+            ul, ol { margin-left: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">🌾</div>
+        <h1>Krishi Shomadhan</h1>
+        <p>Privacy Policy</p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="language-switch">
+                <button class="active" onclick="switchLanguage('english')">🇬🇧 English</button>
+                <button onclick="switchLanguage('bangla')">🇧🇩 বাংলা</button>
+            </div>
+
+            <div id="english" class="content active">
+                <div class="last-updated"><span class="icon">📅</span> Last Updated: May 2026</div>
+
+                <h2><span class="icon">📋</span> Introduction</h2>
+                <p>This Privacy Policy explains how <strong>Krishi Shomadhan</strong> ("we," "our," or "the app") protects your privacy when you use our mobile application.</p>
+                <p>Krishi Shomadhan is designed to work <strong>100% offline</strong>. This means your data stays on your device and is not uploaded to any external server.</p>
+
+                <div class="info-box">
+                    <strong><span class="icon">🔒</span> Privacy First</strong>
+                    <p>We do not collect, store, transmit, sell, or share your personal information. Images and notes used inside the app remain on your device only.</p>
+                </div>
+
+                <h2><span class="icon">📊</span> Data Collection and Usage</h2>
+
+                <h3>1. No Personal Data</h3>
+                <ul>
+                    <li>We do not collect personal information such as your name, phone number, email address, or location.</li>
+                    <li>We do not require account registration or login.</li>
+                    <li>We do not send your personal data to any server.</li>
+                </ul>
+
+                <h3>2. Camera Access</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> The app may request camera permission only to capture images of crop leaves for AI-based disease detection.</li>
+                    <li><strong>Supported crops:</strong> Rice, Potato, and Corn.</li>
+                    <li><strong>Processing:</strong> Captured images are processed locally on your device.</li>
+                    <li><strong>No upload:</strong> These images are not uploaded to any server or shared with third parties.</li>
+                </ul>
+
+                <h3>3. Local Storage</h3>
+                <ul>
+                    <li>The app may use local storage to save agricultural notes, crop information, and calendar reminders.</li>
+                    <li>This information stays on your device and never leaves your device.</li>
+                    <li>You can delete this data by clearing app data or uninstalling the app.</li>
+                </ul>
+
+                <h2><span class="icon">🎯</span> How We Use Your Data</h2>
+                <p>Krishi Shomadhan uses data only inside the app for the following purposes:</p>
+                <ol>
+                    <li><strong>Crop Disease Detection:</strong> To analyze crop leaf images locally and provide possible disease detection results.</li>
+                    <li><strong>Agricultural Notes:</strong> To allow you to save your own farming notes on your device.</li>
+                    <li><strong>Calendar Reminders:</strong> To help you manage agricultural activities and reminders locally.</li>
+                    <li><strong>Offline App Functionality:</strong> To provide app features without internet connectivity.</li>
+                </ol>
+
+                <h2><span class="icon">💾</span> Data Storage and Security</h2>
+                <ul>
+                    <li><strong>Local Storage Only:</strong> All app data is stored locally on your device.</li>
+                    <li><strong>No Cloud Storage:</strong> We do not store your data on cloud servers.</li>
+                    <li><strong>No External Transmission:</strong> The app does not transmit your images, notes, or reminders to us.</li>
+                    <li><strong>User Control:</strong> You can remove all locally stored data through Android settings or by uninstalling the app.</li>
+                </ul>
+
+                <div class="warning-box">
+                    <strong><span class="icon">⚠️</span> No Third-Party Tracking</strong>
+                    <p>Krishi Shomadhan does not use third-party tracking or analytics tools that collect user data.</p>
+                    <ul style="margin-top: 10px;">
+                        <li>❌ No advertising trackers</li>
+                        <li>❌ No analytics services</li>
+                        <li>❌ No user profiling</li>
+                        <li>❌ No selling or sharing of user data</li>
+                    </ul>
+                </div>
+
+                <h2><span class="icon">🔑</span> Permissions Required</h2>
+                <h3>1. Camera Permission</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> To capture crop leaf images for disease detection.</li>
+                    <li><strong>Optional Control:</strong> You may deny camera permission, but image-based disease detection may not work.</li>
+                </ul>
+
+                <h3>2. Storage / Local Data Access</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> To save agricultural notes and calendar reminders locally.</li>
+                    <li><strong>Storage:</strong> Data is saved only on your device.</li>
+                </ul>
+
+                <h3>3. Notification Permission, if used</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> To show calendar or farming activity reminders.</li>
+                    <li><strong>Control:</strong> You can disable notifications from your device settings.</li>
+                </ul>
+
+                <h2><span class="icon">👶</span> Children's Privacy</h2>
+                <p>Krishi Shomadhan does not knowingly collect personal information from children. Since the app works offline and does not transmit personal data, children’s privacy is protected.</p>
+
+                <h2><span class="icon">⏱️</span> Data Retention</h2>
+                <p>Because all data is stored locally on your device:</p>
+                <ul>
+                    <li>Data remains on your device until you delete it.</li>
+                    <li>You can clear app data anytime from Android settings.</li>
+                    <li>Uninstalling the app will remove locally stored app data from your device.</li>
+                </ul>
+
+                <h2><span class="icon">✅</span> Your Rights and Choices</h2>
+                <ol>
+                    <li><strong>Access:</strong> You can view your notes and reminders inside the app.</li>
+                    <li><strong>Modify:</strong> You can edit or update your locally saved information.</li>
+                    <li><strong>Delete:</strong> You can delete data by clearing app data or uninstalling the app.</li>
+                    <li><strong>Permission Control:</strong> You can allow or deny app permissions from Android settings.</li>
+                </ol>
+
+                <h2><span class="icon">🔄</span> Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. Any updates will be reflected on this page, and the “Last Updated” date will be revised accordingly.</p>
+
+                <h2><span class="icon">✉️</span> Contact Us</h2>
+                <div class="contact-box">
+                    <p>If you have any questions about this Privacy Policy, please contact the developer:</p>
+                    <strong>Developer:</strong> Md Jahidul Islam<br>
+                    <strong>Email:</strong> <a href="mailto:jahidislamce@gmail.com">jahidislamce@gmail.com</a><br>
+                    <strong>Location:</strong> Bangladesh
+                </div>
+
+                <h2><span class="icon">📝</span> Consent</h2>
+                <p>By downloading, installing, and using Krishi Shomadhan, you agree to this Privacy Policy.</p>
+            </div>
+
+            <div id="bangla" class="content">
+                <div class="last-updated"><span class="icon">📅</span> সর্বশেষ আপডেট: মে ২০২৬</div>
+
+                <h2><span class="icon">📋</span> ভূমিকা</h2>
+                <p>এই প্রাইভেসি পলিসি ব্যাখ্যা করে যে <strong>Krishi Shomadhan</strong> ("আমরা," "আমাদের," বা "অ্যাপ") আপনার মোবাইল অ্যাপ ব্যবহারের সময় কীভাবে আপনার গোপনীয়তা সুরক্ষিত রাখে।</p>
+                <p>Krishi Shomadhan <strong>১০০% অফলাইনে</strong> কাজ করার জন্য তৈরি করা হয়েছে। অর্থাৎ আপনার ডেটা আপনার ডিভাইসেই থাকে এবং কোনো বাহ্যিক সার্ভারে আপলোড করা হয় না।</p>
+
+                <div class="info-box">
+                    <strong><span class="icon">🔒</span> গোপনীয়তা প্রথম</strong>
+                    <p>আমরা আপনার ব্যক্তিগত তথ্য সংগ্রহ, সংরক্ষণ, প্রেরণ, বিক্রি বা তৃতীয় পক্ষের সাথে শেয়ার করি না। অ্যাপের ভেতরে ব্যবহৃত ছবি ও নোট শুধুমাত্র আপনার ডিভাইসেই থাকে।</p>
+                </div>
+
+                <h2><span class="icon">📊</span> ডেটা সংগ্রহ ও ব্যবহার</h2>
+
+                <h3>১. কোনো ব্যক্তিগত ডেটা নয়</h3>
+                <ul>
+                    <li>আমরা আপনার নাম, ফোন নম্বর, ইমেইল ঠিকানা বা অবস্থানের মতো ব্যক্তিগত তথ্য সংগ্রহ করি না।</li>
+                    <li>অ্যাপ ব্যবহার করতে কোনো অ্যাকাউন্ট রেজিস্ট্রেশন বা লগইন দরকার হয় না।</li>
+                    <li>আমরা আপনার ব্যক্তিগত ডেটা কোনো সার্ভারে পাঠাই না।</li>
+                </ul>
+
+                <h3>২. ক্যামেরা অ্যাক্সেস</h3>
+                <ul>
+                    <li><strong>উদ্দেশ্য:</strong> AI-ভিত্তিক রোগ শনাক্তকরণের জন্য ফসলের পাতার ছবি তুলতে অ্যাপ ক্যামেরা পারমিশন চাইতে পারে।</li>
+                    <li><strong>সমর্থিত ফসল:</strong> ধান, আলু এবং ভুট্টা।</li>
+                    <li><strong>প্রসেসিং:</strong> তোলা ছবিগুলো আপনার ডিভাইসেই লোকালি প্রসেস করা হয়।</li>
+                    <li><strong>কোনো আপলোড নয়:</strong> ছবিগুলো কোনো সার্ভারে আপলোড করা হয় না এবং কোনো তৃতীয় পক্ষের সাথে শেয়ার করা হয় না।</li>
+                </ul>
+
+                <h3>৩. লোকাল স্টোরেজ</h3>
+                <ul>
+                    <li>অ্যাপটি কৃষি নোট, ফসল সম্পর্কিত তথ্য এবং ক্যালেন্ডার রিমাইন্ডার সংরক্ষণের জন্য লোকাল স্টোরেজ ব্যবহার করতে পারে।</li>
+                    <li>এই তথ্য আপনার ডিভাইসেই থাকে এবং কখনো ডিভাইসের বাইরে যায় না।</li>
+                    <li>আপনি অ্যাপ ডেটা ক্লিয়ার করে বা অ্যাপ আনইনস্টল করে এই ডেটা মুছে ফেলতে পারেন।</li>
+                </ul>
+
+                <h2><span class="icon">🎯</span> আমরা কীভাবে ডেটা ব্যবহার করি</h2>
+                <p>Krishi Shomadhan শুধুমাত্র অ্যাপের ভেতরে নিম্নলিখিত উদ্দেশ্যে ডেটা ব্যবহার করে:</p>
+                <ol>
+                    <li><strong>ফসলের রোগ শনাক্তকরণ:</strong> ফসলের পাতার ছবি লোকালি বিশ্লেষণ করে সম্ভাব্য রোগ শনাক্তকরণের ফলাফল দেখানো।</li>
+                    <li><strong>কৃষি নোট:</strong> আপনার নিজস্ব কৃষি নোট ডিভাইসে সংরক্ষণের সুবিধা দেওয়া।</li>
+                    <li><strong>ক্যালেন্ডার রিমাইন্ডার:</strong> কৃষি কাজ ও রিমাইন্ডার ব্যবস্থাপনায় সহায়তা করা।</li>
+                    <li><strong>অফলাইন অ্যাপ ফিচার:</strong> ইন্টারনেট ছাড়াই অ্যাপের সুবিধাগুলো প্রদান করা।</li>
+                </ol>
+
+                <h2><span class="icon">💾</span> ডেটা সংরক্ষণ ও নিরাপত্তা</h2>
+                <ul>
+                    <li><strong>শুধুমাত্র লোকাল স্টোরেজ:</strong> অ্যাপের সব ডেটা আপনার ডিভাইসে লোকালি সংরক্ষিত থাকে।</li>
+                    <li><strong>কোনো ক্লাউড স্টোরেজ নেই:</strong> আমরা আপনার ডেটা কোনো ক্লাউড সার্ভারে সংরক্ষণ করি না।</li>
+                    <li><strong>কোনো বাহ্যিক প্রেরণ নেই:</strong> অ্যাপ আপনার ছবি, নোট বা রিমাইন্ডার আমাদের কাছে পাঠায় না।</li>
+                    <li><strong>ব্যবহারকারীর নিয়ন্ত্রণ:</strong> আপনি Android সেটিংস থেকে অ্যাপ ডেটা ক্লিয়ার করে বা অ্যাপ আনইনস্টল করে সব লোকাল ডেটা মুছে ফেলতে পারেন।</li>
+                </ul>
+
+                <div class="warning-box">
+                    <strong><span class="icon">⚠️</span> কোনো থার্ড-পার্টি ট্র্যাকিং নেই</strong>
+                    <p>Krishi Shomadhan ব্যবহারকারীর ডেটা সংগ্রহ করে এমন কোনো থার্ড-পার্টি ট্র্যাকিং বা অ্যানালিটিক্স টুল ব্যবহার করে না।</p>
+                    <ul style="margin-top: 10px;">
+                        <li>❌ কোনো বিজ্ঞাপন ট্র্যাকার নেই</li>
+                        <li>❌ কোনো অ্যানালিটিক্স সার্ভিস নেই</li>
+                        <li>❌ কোনো ইউজার প্রোফাইলিং নেই</li>
+                        <li>❌ ইউজার ডেটা বিক্রি বা শেয়ার করা হয় না</li>
+                    </ul>
+                </div>
+
+                <h2><span class="icon">🔑</span> প্রয়োজনীয় পারমিশন</h2>
+                <h3>১. ক্যামেরা পারমিশন</h3>
+                <ul>
+                    <li><strong>উদ্দেশ্য:</strong> রোগ শনাক্তকরণের জন্য ফসলের পাতার ছবি তোলা।</li>
+                    <li><strong>ঐচ্ছিক নিয়ন্ত্রণ:</strong> আপনি ক্যামেরা পারমিশন না দিলেও অ্যাপ ব্যবহার করতে পারেন, তবে ছবি-ভিত্তিক রোগ শনাক্তকরণ কাজ নাও করতে পারে।</li>
+                </ul>
+
+                <h3>২. স্টোরেজ / লোকাল ডেটা অ্যাক্সেস</h3>
+                <ul>
+                    <li><strong>উদ্দেশ্য:</strong> কৃষি নোট এবং ক্যালেন্ডার রিমাইন্ডার লোকালি সংরক্ষণ করা।</li>
+                    <li><strong>সংরক্ষণ:</strong> ডেটা শুধুমাত্র আপনার ডিভাইসে সেভ থাকে।</li>
+                </ul>
+
+                <h3>৩. নোটিফিকেশন পারমিশন, যদি ব্যবহৃত হয়</h3>
+                <ul>
+                    <li><strong>উদ্দেশ্য:</strong> ক্যালেন্ডার বা কৃষি কাজের রিমাইন্ডার দেখানো।</li>
+                    <li><strong>নিয়ন্ত্রণ:</strong> আপনি ডিভাইস সেটিংস থেকে নোটিফিকেশন বন্ধ করতে পারেন।</li>
+                </ul>
+
+                <h2><span class="icon">👶</span> শিশুদের গোপনীয়তা</h2>
+                <p>Krishi Shomadhan জেনেশুনে শিশুদের কাছ থেকে কোনো ব্যক্তিগত তথ্য সংগ্রহ করে না। যেহেতু অ্যাপটি অফলাইনে কাজ করে এবং ব্যক্তিগত ডেটা প্রেরণ করে না, তাই শিশুদের গোপনীয়তা সুরক্ষিত থাকে।</p>
+
+                <h2><span class="icon">⏱️</span> ডেটা ধারণ</h2>
+                <p>যেহেতু সব ডেটা আপনার ডিভাইসে লোকালি সংরক্ষিত:</p>
+                <ul>
+                    <li>আপনি মুছে না ফেলা পর্যন্ত ডেটা আপনার ডিভাইসে থাকে।</li>
+                    <li>আপনি যেকোনো সময় Android সেটিংস থেকে অ্যাপ ডেটা ক্লিয়ার করতে পারেন।</li>
+                    <li>অ্যাপ আনইনস্টল করলে লোকালি সংরক্ষিত অ্যাপ ডেটা মুছে যাবে।</li>
+                </ul>
+
+                <h2><span class="icon">✅</span> আপনার অধিকার ও পছন্দ</h2>
+                <ol>
+                    <li><strong>অ্যাক্সেস:</strong> আপনি অ্যাপের ভেতরে আপনার নোট ও রিমাইন্ডার দেখতে পারবেন।</li>
+                    <li><strong>পরিবর্তন:</strong> আপনি লোকালি সেভ করা তথ্য এডিট বা আপডেট করতে পারবেন।</li>
+                    <li><strong>মুছে ফেলা:</strong> অ্যাপ ডেটা ক্লিয়ার করে বা অ্যাপ আনইনস্টল করে ডেটা মুছে ফেলতে পারবেন।</li>
+                    <li><strong>পারমিশন নিয়ন্ত্রণ:</strong> Android সেটিংস থেকে অ্যাপ পারমিশন চালু বা বন্ধ করতে পারবেন।</li>
+                </ol>
+
+                <h2><span class="icon">🔄</span> প্রাইভেসি পলিসি পরিবর্তন</h2>
+                <p>আমরা সময়ে সময়ে এই প্রাইভেসি পলিসি আপডেট করতে পারি। কোনো পরিবর্তন হলে এই পেজে আপডেট করা হবে এবং “সর্বশেষ আপডেট” তারিখ সংশোধন করা হবে।</p>
+
+                <h2><span class="icon">✉️</span> যোগাযোগ করুন</h2>
+                <div class="contact-box">
+                    <p>এই প্রাইভেসি পলিসি সম্পর্কে কোনো প্রশ্ন থাকলে ডেভেলপারের সাথে যোগাযোগ করুন:</p>
+                    <strong>ডেভেলপার:</strong> Md Jahidul Islam<br>
+                    <strong>ইমেইল:</strong> <a href="mailto:jahidislamce@gmail.com">jahidislamce@gmail.com</a><br>
+                    <strong>লোকেশন:</strong> Bangladesh
+                </div>
+
+                <h2><span class="icon">📝</span> সম্মতি</h2>
+                <p>Krishi Shomadhan অ্যাপ ডাউনলোড, ইনস্টল এবং ব্যবহার করার মাধ্যমে আপনি এই প্রাইভেসি পলিসিতে সম্মতি প্রদান করছেন।</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Md Jahidul Islam. All Rights Reserved.</p>
+            <p><a href="index.html">Back to Home</a></p>
+        </div>
+    </div>
+
+    <script>
+        function switchLanguage(language) {
+            var contents = document.querySelectorAll('.content');
+            var buttons = document.querySelectorAll('.language-switch button');
+            contents.forEach(function(content) { content.classList.remove('active'); });
+            buttons.forEach(function(button) { button.classList.remove('active'); });
+            document.getElementById(language).classList.add('active');
+            event.target.classList.add('active');
+            document.documentElement.lang = language === 'bangla' ? 'bn' : 'en';
+        }
+    </script>
+</body>
+</html>
